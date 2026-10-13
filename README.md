@@ -41,28 +41,35 @@ Create and activate a virtual environment.
 
 ### Windows (PowerShell)
 
+```powershell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install opencv-python mediapipe pyautogui
-
+```
 
 ### macOS
 
+```bash
 python3.12 -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
 pip install opencv-python mediapipe pyautogui
+```
 
 ## Run the Project
 
 ### Windows
 
+```powershell
 python main.py
+```
 
 ### macOS
 
+```bash
 python AI_Virtual_Mouse_macOS_updated.py
+```
 
 Make sure `hand_landmarker.task` is in the location expected by the selected Python script.
 
