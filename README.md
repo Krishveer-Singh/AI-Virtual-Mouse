@@ -23,62 +23,54 @@ A touch-free virtual mouse built with Python, OpenCV, MediaPipe, and PyAutoGUI. 
 
 ## Project Files
 
-- `main.py` — Main project version
-- `main1.py` — Alternate/test version
-- `AI_Virtual_Mouse_macOS.py` — macOS version
-- `AI_Virtual_Mouse_macOS_updated.py` — Updated macOS version
+- `Windows.py` — Windows version of the virtual mouse
+- `macOS.py` — macOS version of the virtual mouse
+- `requirements.txt` — Pinned Python dependencies required by the project
 - `hand_landmarker.task` — MediaPipe hand landmark model
 
 ## Requirements
 
-- Python version compatible with the installed MediaPipe and OpenCV packages
+- Python 3.x
 - A working webcam
 - Camera and accessibility permissions on macOS
+- A virtual environment is recommended
 
 ## Setup
 
-Create and activate a virtual environment.
-
 ### Windows (PowerShell)
 
-```powershell
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install opencv-python mediapipe pyautogui
-```
+pip install -r requirements.txt
 
 ### macOS
 
-```bash
-python3.12 -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 python -m pip install --upgrade pip
-pip install opencv-python mediapipe pyautogui
-```
+pip install -r requirements.txt
 
 ## Run the Project
 
 ### Windows
 
-```powershell
-python main.py
-```
+python Windows.py
 
 ### macOS
 
-```bash
-python AI_Virtual_Mouse_macOS_updated.py
-```
+python3 macOS.py
+
 
 Make sure `hand_landmarker.task` is in the location expected by the selected Python script.
 
 ## Notes
 
-- The `venv` folder should not be uploaded to GitHub. Each operating system needs its own environment.
+- The `venv` folder should not be uploaded to GitHub. Each operating system should have its own Python environment.
 - On macOS, allow camera access and the required Accessibility permissions for mouse control.
 - Gesture recognition can be affected by lighting, camera quality, and background conditions.
 - The project is a prototype and may not work identically across all applications or computers.
+- Use the operating-system-specific Python file for the corresponding platform.
 
 ## Author
 
