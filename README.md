@@ -40,15 +40,21 @@ A touch-free virtual mouse built with Python, OpenCV, MediaPipe, and PyAutoGUI. 
 ### Windows (PowerShell)
 
 python -m venv venv
+
 .\venv\Scripts\Activate.ps1
+
 python -m pip install --upgrade pip
+
 pip install -r requirements.txt
 
 ### macOS
 
 python3 -m venv venv
+
 source venv/bin/activate
+
 python -m pip install --upgrade pip
+
 pip install -r requirements.txt
 
 ## Run the Project
