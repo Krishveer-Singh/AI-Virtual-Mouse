@@ -89,9 +89,8 @@ last_drag_time = 0
 drag_cooldown = 0.5  # Brief pause after drag/selection to prevent accidental zoom
 
 # SCROLL SETTINGS (adjusted for macOS sensitivity)
-scroll_delay = 0.05
+scroll_delay = 0.12
 last_scroll_time = 0
-# SCROLL_AMOUNT = 6
 SCROLL_AMOUNT = 1
 
 # ZOOM SETTINGS (with buffer to prevent accidental triggers during transitions)
@@ -106,16 +105,16 @@ print("AI Virtual Mouse Started on macOS")
 print("=" * 50)
 print("Only Index Up                  = Move Cursor")
 print("All Fingers Up                 = Lock Cursor")
-print("Middle+Ring+Pinky Up + Pinch   = Left Click / Double Click")
+print("All Fingers Up, Index + Thumb Pinch   = Left Click (Single Pinch) / Double Click (Double Pinch)")
 print("Index + Pinky Up               = Right Click")
-print("Index + Middle Attached Up     = Scroll Up")
-print("Index + Middle + Ring Attached = Scroll Down")
+print("Index + Middle Up     = Scroll Up")
+print("Index + Middle + Ring Up = Scroll Down")
 print("Pinky Only Up                  = Zoom Out (Command + -)")
 print("Ring + Pinky Up                = Zoom In (Command + =)")
 print("Cursor Locked + Thumb Only Up  = Drag (Smooth & Aligned)")
 print("All Four Fingers Up            = Drop")
 print("=" * 50)
-print("Press 'q' to quit.")
+print("First open Camera then Touch/click on Camera Then Press 'q' to quit.")
 
 # MAIN LOOP
 while True:
